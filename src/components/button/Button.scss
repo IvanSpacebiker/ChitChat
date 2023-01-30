@@ -1,1 +1,25 @@
-//Button SCSS file
+$light-grey: #D9D9D9;
+$green: #79DAAB;
+$light-red: #FF9A9A;
+
+.button {
+  display: flex;
+  width: 130px;
+  height: 50px;
+  justify-content: center;
+  vertical-align: center;
+  border-radius: 15px;
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.type_0 {
+  background-color: $light-grey;
+}
+
+.type_1 {
+  background-color: $green;
+}
+.type_2 {
+  background-color: $light-red;
+}
