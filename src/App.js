@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-        <Button label={"Success"} type={1} onClick={successClick}/>
+        <Button label={"Success"} type={"positive"} onClick={successClick}/>
     </div>
   );
 }

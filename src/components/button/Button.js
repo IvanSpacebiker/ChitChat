@@ -1,22 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 
 //Styles
-import "./Button.scss"
+import styles from "./button.module.scss"
 
 
-function Button(props) {
+function Button({ label, type, onClick }) {
 
     return (
-        <div className={"button type_" + props.type} onClick={props.onClick}>
-            <p>{props.label}</p>
+        <div className={classNames(styles.button, styles[type])} onClick={onClick}>
+            <p>{label}</p>
         </div>
     );
 }
 
 Button.propTypes = {
     label   : PropTypes.string.isRequired,
-    type    : PropTypes.number.isRequired,
+    type    : PropTypes.string.isRequired,
 
     // Handlers
     onClick : PropTypes.func.isRequired,
